@@ -46,7 +46,7 @@ This project demonstrates the integration of advanced NLP models with practical 
 
 ## Usage
 
-1. Start the Flask AP
+1. Start the Flask APP
 
    python main.py
 
