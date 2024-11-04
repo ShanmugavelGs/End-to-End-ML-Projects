@@ -22,36 +22,36 @@ This project demonstrates the integration of advanced NLP models with practical 
    git clone https://github.com/ShanmugavelGs/End-to-End-Projects.git
 
 2. Create the test environment using Anaconda Prompt
-   
+   ```sh
    conda create -n test_env
    conda install pip
 
 3. Install the dependencies
-
+   ```sh
    pip install -r requirements.txt
 
 4. Create a .env file and enter the database URL
-
+   ```sh
    DATABASE_URL=postgresql://username:password@localhost:5432/dbname
 
 5. Change the directory of your model folder and run the model file
-
+   ```sh
    summarizer.save_pretrained('change the dir here, to your model file')
 
    python model.py
 
 6. Change the model directory in main.py file
-
+   ```sh
    summarizer = pipeline("summarization", model="change the dir here, to your model file")
 
 ## Usage
 
 1. Start the Flask APP
-
+   ```sh
    python main.py
 
 2. Open Streamlit UI
-
+   ```sh
    streamlit run summarizer.py
 
 3. After the first use, check for user input and output table in your db 
